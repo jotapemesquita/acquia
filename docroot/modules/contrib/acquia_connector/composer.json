@@ -1,0 +1,22 @@
+{
+    "name": "drupal/acquia_connector",
+    "type": "drupal-module",
+    "description": "Allows Drupal websites to connect with Acquia.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "drush/drush": "~9.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-8.x-1.x": "1.x-dev"
+        },
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}
