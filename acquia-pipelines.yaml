@@ -1,5 +1,10 @@
-build-steps:
-  - build:
-      type: script
-      script:
-        - echo "Hello, Pipelines!" > hello.txt
+version: 1.0.0
+events:
+  build:
+    steps:
+      - hello:
+          type: script
+          script:
+            # Try to create a docroot directory which Acquia Cloud expects to serve from. If the docroot directory already existis you will get an error in your log.
+            - mkdir docroot
+            - echo "Hello, Pipelines!" > docroot/index.html
