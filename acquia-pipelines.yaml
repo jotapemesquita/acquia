@@ -1,0 +1,5 @@
+build-steps:
+  - build:
+      type: script
+      script:
+        - echo "Hello, Pipelines!" > hello.txt
